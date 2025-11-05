@@ -21,3 +21,6 @@ spec:
           image: ladeavinash/events-website:v1.0
           ports:
             - containerPort: 8080
+          env:
+          - name: SERVER
+            value: "http://events-api-svc:8082"
